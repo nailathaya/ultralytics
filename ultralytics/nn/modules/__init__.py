@@ -17,6 +17,8 @@ Examples:
     >>> subprocess.run(f"onnxslim {f} {f} && open {f}", shell=True, check=True)  # pip install onnxslim
 """
 
+from .cbam import CBAM
+
 from .block import (
     C1,
     C2,
@@ -61,7 +63,7 @@ from .block import (
     TorchVision,
 )
 from .conv import (
-    CBAM,
+    # CBAM,
     ChannelAttention,
     Concat,
     Conv,
